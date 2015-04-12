@@ -1,0 +1,26 @@
+{
+  "name": "ng-attrs",
+  "version": "0.1.0",
+  "description": "Dynamic set or remove attributes in Angular",
+  "main": "ng-attrs.js",
+  "devDependencies": {
+    "eslint": "^0.19.0",
+    "uglify-js": "^2.4.19"
+  },
+  "scripts": {
+    "uglify": "node node_modules/uglify-js/bin/uglifyjs -c -d -o dist/ng-attrs.min.js --comments license -- ng-attrs.js",
+    "lint": "node node_modules/eslint/bin/eslint.js --ignore-path dist/** .",
+    "build": "npm run lint && mkdir -p dist && npm run uglify",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisyip/ng-attrs.git"
+  },
+  "author": "Chris Yip <i@chrisyip.im>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisyip/ng-attrs/issues"
+  },
+  "homepage": "https://github.com/chrisyip/ng-attrs"
+}
