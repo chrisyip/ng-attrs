@@ -29,6 +29,12 @@ Or manually download it.
 </body>
 ```
 
+The different between [`ngAttr`](https://docs.angularjs.org/guide/directive#-ngattr-attribute-bindings) and `ngAttrs` is when value is:
+
+- `true`: `ngAttrs` will set attribute to `''`, useful for attribute that doesn't have value, e.g. `contenteditable`, `novalidate`; `ngAttr` will just set attribute to `'true'`, e.g. `contenteditable="true"`.
+- `false` or `undefined`: `ngAttrs` will remove attribute from element, `ngAttr` will keep attribute without value.
+- Other data types, `ngAttrs` and `ngAttr` will convert it to `String` and set it as value.
+
 # Todo
 
 - Support package managers
