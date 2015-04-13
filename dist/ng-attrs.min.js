@@ -1,5 +1,7 @@
 /**
  * ng-attrs
+ * @author Chris Yip i@chrisyip.im
+ * @website https://github.com/chrisyip/ng-attrs
  * @license MIT
  * @example
  * <div ng-attrs="{ contenteditable: isEditable }"
